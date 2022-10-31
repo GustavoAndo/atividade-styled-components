@@ -7,8 +7,6 @@ type Props = HTMLAttributes<HTMLElement> & {
 }
 
 export function Local({localSorteio, nomeMunicipioUFSorteio}: Props){
-    console.log(localSorteio)
-    console.log(nomeMunicipioUFSorteio)
 
     return (
         <LocalSld>

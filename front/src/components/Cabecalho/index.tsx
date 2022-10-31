@@ -7,8 +7,6 @@ type Props = HTMLAttributes<HTMLElement> & {
 }
 
 export function Cabecalho({numero, dataApuracao}: Props){
-    console.log(numero)
-    console.log(dataApuracao)
 
     return (
         <WrapperSld>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Acumulado } from "../components/Acumulado";
 import { Cabecalho } from "../components/Cabecalho";
+import { Estimativa } from "../components/Estimativa";
 import { Local } from "../components/Local";
 import { Numeros } from "../components/Numeros/index.";
 import service from "../services"
@@ -29,6 +30,7 @@ export default function Principal() {
       { concurso.acumulado && <Acumulado /> } 
       <Local localSorteio={concurso.localSorteio} nomeMunicipioUFSorteio={concurso.nomeMunicipioUFSorteio}/>
       {concurso.listaDezenas && <Numeros listaDezenas={concurso.listaDezenas} />}
+      <Estimativa dataProximoConcurso={concurso.dataProximoConcurso} valorEstimadoProximoConcurso={concurso.valorEstimadoProximoConcurso} />
     </>
   )
 }
