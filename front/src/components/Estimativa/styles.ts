@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const EstimativaSld = styled.div`
-    border-bottom: 1px solid #bbb;
     display: flex;
     padding: 10px 0px;
 `

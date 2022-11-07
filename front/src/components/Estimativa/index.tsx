@@ -10,7 +10,7 @@ export function Estimativa({ dataProximoConcurso, valorEstimadoProximoConcurso }
     return (
         <EstimativaSld>
             <DataEstimadaSld>Estimativa de prêmio do próximo concurso {dataProximoConcurso}</DataEstimadaSld>  
-            <PremioEstimadoSld>R$ {valorEstimadoProximoConcurso}</PremioEstimadoSld>
+            <PremioEstimadoSld>R$ {new Intl.NumberFormat('de-DE').format(valorEstimadoProximoConcurso)}</PremioEstimadoSld>
         </EstimativaSld>
     )
 }

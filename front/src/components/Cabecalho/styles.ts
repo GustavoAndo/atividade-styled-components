@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const WrapperSld = styled.div`
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #aaa;
     display: flex;
     padding: 10px 0px;
 `
