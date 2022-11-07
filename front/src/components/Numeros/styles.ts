@@ -7,8 +7,8 @@ export const NumerosSld = styled.div`
 
 export const NumeroSld = styled.div`
     font-size: 35px;
-    color: #fff;
-    background-color: #209869;
+    color: ${props => props.theme.colorNumber};
+    background-color: ${props => props.theme.backgroundNumber};
     border-radius: 35px;
     display: inline-block;
     margin-right: 10px;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CarregandoSld = styled.div`
     font-size: 25px;
-    color: #0066b3;
+    color: ${props => props.theme.strong};
     font-weight: bold;
     position: absolute;
     top: 50%;

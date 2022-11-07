@@ -10,7 +10,6 @@ import service from "../services"
 import { Props } from "../types";
 import {dark, light} from "../styles/theme"
 import { WrapperSld } from "./styles";
-import { setEmitFlags } from "typescript";
 
 export default function Principal() {
   const [tema, setTema] = useState(dark)
@@ -33,15 +32,17 @@ export default function Principal() {
 
   return (
     <ThemeProvider theme={tema}>
+      <WrapperSld>
       {!concurso.numero ? <Carregando /> : (
-          <WrapperSld>
+          <>
             <Cabecalho numero={concurso.numero} dataApuracao={concurso.dataApuracao}/>
             { concurso.acumulado && <Acumulado /> } 
             <Local localSorteio={concurso.localSorteio} nomeMunicipioUFSorteio={concurso.nomeMunicipioUFSorteio}/>
             <Numeros listaDezenas={concurso.listaDezenas} />
             <Estimativa dataProximoConcurso={concurso.dataProximoConcurso} valorEstimadoProximoConcurso={concurso.valorEstimadoProximoConcurso} />
-          </WrapperSld>
+          </>  
       )}
+      </WrapperSld>
     </ThemeProvider>
   )
 }

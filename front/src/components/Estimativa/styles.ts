@@ -7,7 +7,7 @@ export const EstimativaSld = styled.div`
 
 export const DataEstimadaSld = styled.div`
     font-size: 16px;
-    color: #aaa;
+    color: ${props => props.theme.text};
     align-items: flex-start;
     width: 155px;
     text-align: justify;
@@ -15,7 +15,7 @@ export const DataEstimadaSld = styled.div`
 
 export const PremioEstimadoSld = styled.div`
     font-size: 30px;
-    color: #4c546d;
+    color: ${props => props.theme.colorNext};
     align-items: flex-start;
     padding-bottom: 3px;
     margin-left: 10px;

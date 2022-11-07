@@ -3,7 +3,12 @@ const dark = {
 }
 
 const light = {
-    background: "#fff"
+    background: "#fff", 
+    text: "#6e6e6e",
+    strong: "#0066b3",
+    backgroundNumber: "#209869",
+    colorNumber: "#fff",
+    colorNext: "#4c546d"
 }
 
 export {
