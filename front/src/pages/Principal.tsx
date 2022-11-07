@@ -12,7 +12,7 @@ import {dark, light} from "../styles/theme"
 import { WrapperSld } from "./styles";
 
 export default function Principal() {
-  const [tema, setTema] = useState(dark)
+  const [tema, setTema] = useState(light)
 
   const [concurso, setConcurso] = useState({} as Props) 
 
